@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>A Nice &amp; Simple Contact Form</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+	<div id="page-wrap">
+
+		<img src="images/title.gif" alt="A Nice &amp; Simple Contact Form" /><br /><br />
+		<p>By <a href="http://css-tricks.com">CSS-Tricks</a></p>
+
+		<p>form spree.io .</p>
+
+
+
+		<div id="contact-area">
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfd7wMXjr8qiEE670RzFVyS_99X8xWj_KAgiGaEVYv0g-g5Nw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+  Name:<br>
+  <input type="text" name="entry.590016163" id="entry.590016163"><br>
+  Email:<br>
+  <input type="text" name="entry.463380756" id="entry.463380756">
+
+	<label for="Name">Name:</label>
+	<input type="text" name="entry.590016163" id="entry.590016163" />
+
+	<label for="Email">Email:</label>
+	<input type="text" name="entry.815552344" id="entry.815552344" />
+
+	<label for="Message">Questions:</label><br />
+	<textarea name="entry.21846035" rows="20" cols="20" id="entry.21846035"></textarea>
+
+  <input type="submit" value="Submit">
+</form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+			<div style="clear: both;"></div>
+
+
+		</div>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">var submitted=false;</script>
+	<script type="text/javascript">
+	$('#gform').on('submit', function(e) {
+	  $('#gform *').fadeOut(2000);
+	  $('#gform').prepend('Your submission has been processed...');
+	  });
+	</script>
+</body>
+
+</html>
